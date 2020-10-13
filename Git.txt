@@ -1,0 +1,37 @@
+Git create repo
+CMD
+cd <project directory>
+git init
+git add *
+git status
+git commit -m "full code"
+git remote add origin <repo link from GitHub>
+git push -u origin master
+fill GitHub credentials if asked
+
+# GitHub changes 
+cd project directory
+git clone <link>	# First time pulling complete code
+git status		# shows edits, with a path
+git add*
+git add <path from git status>	# partial addition
+git commit -m "message"
+git push origin master
+git pull origin master
+
+
+# Taking a branch
+git checkout -b <give-branch-name>	# New branch
+git checkout <branch-name> 		# change branch
+git branch				# to see which branch
+git pull origin <branch-name>
+git push origin <branch-name>
+
+
+# To merge secondary branch to master
+git checkout master
+git pull origin master
+git merge <test-branch-name>
+git push origin master
+
+
